@@ -3,4 +3,11 @@ name = "from_primitive"
 version = "0.1.0"
 authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
 
+keywords = ["from_primitive"]
+description = "from_primitive trait"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-from_primitive.git"
+homepage = "https://github.com/nathanfaucett/rs-from_primitive"
+
 [dependencies]
