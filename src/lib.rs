@@ -60,3 +60,18 @@ trait_from_primitive!(i64);
 
 trait_from_primitive!(f32);
 trait_from_primitive!(f64);
+
+
+#[cfg(test)]
+mod test {
+    use super::FromPrimitive;
+
+    fn create_one<T: FromPrimitive>() -> T {
+        T::from_f32(1_f32)
+    }
+
+    #[test]
+    fn test() {
+        assert_eq!(create_one::<usize>(), 1_usize);
+    }
+}
